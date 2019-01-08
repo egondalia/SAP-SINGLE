@@ -47,7 +47,7 @@
             "apiVersion": "2016-01-01",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "Standard_LRS"
+                "name": "Premium_LRS"
             },
             "kind": "Storage",
             "properties": {}
@@ -97,7 +97,7 @@
             ],
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "Standard_D1_v2"
+                    "vmSize": "Premium_D1_v2"
                 },
                 "osProfile": {
                     "computerName": "[variables('vmName')]",
