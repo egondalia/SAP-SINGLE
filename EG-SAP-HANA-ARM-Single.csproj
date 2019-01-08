@@ -1,0 +1,131 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7EE670C2-F031-4546-860F-7FD705B3B17D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>EG_SAP_HANA_ARM_Single</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-8375f73a5eb2815e93d56e021c7b5a27817cf6d5.idx" />
+    <None Include=".git\objects\pack\pack-8375f73a5eb2815e93d56e021c7b5a27817cf6d5.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include="azuredeploy-hsr-infra.json" />
+    <None Include="azuredeploy-hsr-sw.json" />
+    <None Include="azuredeploy-hsr.json" />
+    <None Include="azuredeploy.json" />
+    <None Include="azuredeploy.parameters.json" />
+    <None Include="hanastudio-hsr.ps1" />
+    <None Include="hanastudio.ps1" />
+    <None Include="hdbinst.cfg" />
+    <None Include="ISSUE_TEMPLATE.md" />
+    <None Include="PULL_REQUEST_TEMPLATE.md" />
+    <None Include="README-HSR.md" />
+    <None Include="README.md" />
+    <None Include="scripts\allvmsizes-hsr-cluster.sh" />
+    <None Include="scripts\allvmsizes.sh" />
+    <None Include="scripts\waitfor.sh" />
+    <None Include="tests\azuredeploy.cfg" />
+    <None Include="tests\hana-deploy.sh" />
+    <None Include="UploadToAzure.md" />
+    <None Include="Vms\extralarge-hsr.json" />
+    <None Include="Vms\extralarge.json" />
+    <None Include="Vms\hanajb-hsr.json" />
+    <None Include="Vms\hanajb.json" />
+    <None Include="Vms\large-hsr.json" />
+    <None Include="Vms\large-hsr.json.bak" />
+    <None Include="Vms\large.json" />
+    <None Include="Vms\medium-hsr.json" />
+    <None Include="Vms\medium.json" />
+    <None Include="Vms\small-hsr.json" />
+    <None Include="Vms\small.json" />
+    <None Include="Vms\superlarge.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="media\2017-10-27_15-41-01.jpg" />
+    <Content Include="media\2017-10-27_16-54-18.jpg" />
+    <Content Include="media\2017-10-27_16-57-19.jpg" />
+    <Content Include="media\2017-10-27_16-58-37.jpg" />
+    <Content Include="media\directories.png" />
+    <Content Include="media\directories2.png" />
+    <Content Include="media\directories3.png" />
+    <Content Include="media\Structure1.png" />
+    <Content Include="media\Structure2.png" />
+    <Content Include="media\Structure3.png" />
+    <Content Include="media\templatedeployment1.png" />
+    <Content Include="media\Upload1.png" />
+    <Content Include="media\Upload2.png" />
+    <Content Include="media\Upload3.png" />
+    <Content Include="media\Upload4.png" />
+    <Content Include="media\Upload5.png" />
+    <Content Include="media\Upload6.png" />
+    <Content Include="media\Upload7.png" />
+    <Content Include="media\Upload8.png" />
+    <Content Include="media\Upload9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
